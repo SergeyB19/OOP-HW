@@ -1,7 +1,7 @@
 public class Gryffindor {
-    private int nobility;
-    private int honour;
-    private int bravery;
+    public String nobility;
+    public String honour;
+    public int bravery;
 
     public Gryffindor(int nobility, int honour, int bravery) {
         this.nobility = nobility;
@@ -32,6 +32,5 @@ public class Gryffindor {
     public void setBravery(int bravery) {
         this.bravery = bravery;
     }
-
 
 }
