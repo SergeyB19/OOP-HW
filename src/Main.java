@@ -17,5 +17,17 @@ public class Main {
             Hogwarts hogwarts = puffendui[i];
             System.out.println("Имя " + hogwarts.getFirstName() + " Фамилия " + hogwarts.getSurName() + " факультет " + hogwarts.getFaculty());
         }
+
+        System.out.println();
+        Hogwarts[] Kogtevran = {
+                new Kogtevran("Zhou ", "Chang", "Kogtevran",5,5,5,7),
+                new Kogtevran("Padma  ", "Patil ", "Kogtevran",5,5,5,7),
+                new Kogtevran("Marcus  ", "Belby", "Kogtevran",7,7,7,7)};
+        for (int i = 0; i < Kogtevran.length; i++) {
+            Hogwarts Kogtevran = Kogtevran[i];
+            System.out.println("Имя " + Kogtevran.getFirstName() +
+                    " Фамилия " + Kogtevran.getSurName() +
+                    " факультет " + Kogtevran.getFaculty());
+        }
     }
 }

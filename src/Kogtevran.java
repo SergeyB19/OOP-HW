@@ -1,15 +1,17 @@
-public class Kogtevran {
+public class Kogtevran extends Hogwarts {
     public int mind;
     public int wisdom;
     public int wit;
     public int creation;
 
-    public Kogtevran(int mind, int wisdom, int wit, int creation) {
+    public Kogtevran(String firstName, String surName, String faculty, int mind, int wisdom, int wit, int creation) {
+        super(firstName, surName, faculty);
         this.mind = mind;
         this.wisdom = wisdom;
         this.wit = wit;
         this.creation = creation;
     }
+
 
     public int getMind() {
         return mind;

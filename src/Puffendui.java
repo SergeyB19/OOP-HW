@@ -1,9 +1,10 @@
-public class Puffendui {
+public class Puffendui extends Hogwarts {
     public int hardWork;
     public int fidelity;
     public int honesty;
 
-    public Puffendui(int hardWork, int fidelity, int honesty) {
+    public Puffendui(String firstName, String surName, String faculty, int hardWork, int fidelity, int honesty) {
+        super(firstName, surName, faculty);
         this.hardWork = hardWork;
         this.fidelity = fidelity;
         this.honesty = honesty;

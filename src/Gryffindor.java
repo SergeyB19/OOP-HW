@@ -1,27 +1,28 @@
-public class Gryffindor {
+public class Gryffindor extends Hogwarts {
     public String nobility;
     public String honour;
     public int bravery;
 
-    public Gryffindor(int nobility, int honour, int bravery) {
+    public Gryffindor(String firstName, String surName, String faculty, String nobility, String honour, int bravery) {
+        super(firstName, surName, faculty);
         this.nobility = nobility;
         this.honour = honour;
         this.bravery = bravery;
     }
 
-    public int getNobility() {
+    public String getNobility() {
         return nobility;
     }
 
-    public void setNobility(int nobility) {
+    public void setNobility(String nobility) {
         this.nobility = nobility;
     }
 
-    public int getHonour() {
+    public String getHonour() {
         return honour;
     }
 
-    public void setHonour(int honour) {
+    public void setHonour(String honour) {
         this.honour = honour;
     }
 
@@ -32,5 +33,4 @@ public class Gryffindor {
     public void setBravery(int bravery) {
         this.bravery = bravery;
     }
-
 }
