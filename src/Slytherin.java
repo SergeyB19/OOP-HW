@@ -53,4 +53,8 @@ public class Slytherin extends Hogwarts {
     public void setLustForPower(int lustForPower) {
         this.lustForPower = lustForPower;
     }
+
+    public String toString() {
+        return String.format("хитрость = %d,решительность=%d, амбициозность=%d, находчивость =%d, власть =%d", super.toString(), decisiveness, ambitiousness ,resourceFulness,lustForPower);
+    }
 }

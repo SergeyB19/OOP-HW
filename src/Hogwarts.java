@@ -1,7 +1,7 @@
 public class Hogwarts {
-    private String firstName;
-    private String surName;
-    private String faculty;
+    public String firstName;
+    public String surName;
+    public String faculty;
 
     public Hogwarts(String firstName, String surName, String faculty) {
         this.firstName = firstName;
@@ -31,5 +31,9 @@ public class Hogwarts {
 
     public void setFaculty(String faculty) {
         this.faculty = faculty;
+    }
+
+    public String toString() {
+        return String.format("имя = %d,фамилия=%d, факультет=%d", super.toString(), firstName, surName, faculty);
     }
 }

@@ -13,6 +13,7 @@ public class Kogtevran extends Hogwarts {
     }
 
 
+
     public int getMind() {
         return mind;
     }
@@ -44,4 +45,10 @@ public class Kogtevran extends Hogwarts {
     public void setCreation(int creation) {
         this.creation = creation;
     }
-}
+
+    @Override
+    public String toString() {
+        return String.format("ум = %d,мудрость=%d, остроумие=%d, творчество =%d", super.toString(), mind, wisdom, wit,creation);
+    }
+    }
+

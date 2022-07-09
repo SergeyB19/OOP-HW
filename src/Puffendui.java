@@ -33,4 +33,9 @@ public class Puffendui extends Hogwarts {
     public void setHonesty(int honesty) {
         this.honesty = honesty;
     }
+
+    @Override
+    public String toString() {
+        return String.format("трудолюбие = %d,верность=%d; честность=%d",super.toString(), hardWork, fidelity, honesty);
+    }
 }
